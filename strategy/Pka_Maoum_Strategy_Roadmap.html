@@ -1,0 +1,286 @@
+<title>Pka Ma'oum Roadmap 2026–2028</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@400;600;700&family=Battambang:wght@400;700&display=swap">
+<style>
+/* Layout: one reading column with wide exhibits (timeline, chart, tables) that scroll inside their own frames */
+:root{
+  --bg:#f3f5f0; --surface:#ffffff; --ink:#1d2a22; --muted:#5d6b62; --line:#d6ddd3;
+  --green:#2f5d3a; --green-soft:#e1ebe0; --gold:#a8782a; --gold-soft:#f3e7cf; --rose:#b0485e; --rose-soft:#f5e0e4;
+  --display:"Marcellus", "Palatino Linotype", Georgia, serif;
+  --body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --khmer:"Battambang", "Khmer OS", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121915; --surface:#1a231e; --ink:#e4ebe5; --muted:#9eaca3; --line:#2f3b34;
+  --green:#7fb98b; --green-soft:#21352a; --gold:#d6a75a; --gold-soft:#3a2f1c; --rose:#e38a9c; --rose-soft:#3b2228; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121915; --surface:#1a231e; --ink:#e4ebe5; --muted:#9eaca3; --line:#2f3b34;
+  --green:#7fb98b; --green-soft:#21352a; --gold:#d6a75a; --gold-soft:#3a2f1c; --rose:#e38a9c; --rose-soft:#3b2228; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body)}
+.wrap{max-width:1040px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:56px}
+header{display:grid;gap:12px;border-bottom:1px solid var(--line);padding-bottom:32px}
+.kh{font-family:var(--khmer);color:var(--green);font-size:1.25rem}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:clamp(2rem,5vw,3rem);color:var(--green)}
+h2{font-size:1.75rem;color:var(--green)}
+h3{font-size:1.2rem;margin-top:8px}
+p{margin:0;max-width:68ch}
+.lead{font-size:1.15rem;max-width:62ch}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;font-weight:700;color:var(--gold)}
+.motto{font-family:var(--display);font-size:1.1rem;color:var(--muted)}
+section{display:grid;gap:18px;min-width:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:2px}
+.fact b{font-family:var(--display);font-size:1.6rem;font-weight:400;color:var(--green);font-variant-numeric:tabular-nums}
+.fact span{font-size:.85rem;color:var(--muted)}
+ul.principles{margin:0;padding-left:20px;display:grid;gap:6px;max-width:68ch}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;background:var(--green-soft)}
+tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr.total td{font-weight:700;background:var(--green-soft)}
+.verdict{display:inline-block;padding:2px 8px;border-radius:999px;font-size:.78rem;font-weight:700;white-space:nowrap}
+.bad{background:var(--rose-soft);color:var(--rose)}
+.ok{background:var(--green-soft);color:var(--green)}
+.warn{background:var(--gold-soft);color:var(--gold)}
+.note{font-size:.9rem;color:var(--muted)}
+/* Gantt */
+.gantt{min-width:760px;padding:16px;display:grid;gap:8px}
+.grow{display:grid;grid-template-columns:170px 1fr;gap:12px;align-items:center}
+.track{position:relative;height:30px;background:repeating-linear-gradient(90deg,transparent 0 calc(100%/27 - 1px),var(--line) calc(100%/27 - 1px) calc(100%/27))}
+.bar{position:absolute;top:3px;bottom:3px;border-radius:4px;background:var(--green);color:var(--surface);font-size:.75rem;font-weight:700;padding:0 8px;display:flex;align-items:center;white-space:nowrap;overflow:hidden}
+.bar.gold{background:var(--gold)} .bar.rose{background:var(--rose)}
+.years{display:grid;grid-template-columns:170px 1fr;gap:12px;font-size:.75rem;color:var(--muted);font-weight:700}
+.years div:last-child{display:grid;grid-template-columns:3fr 12fr 12fr}
+.years span{border-left:1px solid var(--line);padding-left:6px}
+.glabel{font-size:.88rem;font-weight:600}
+.open-mark{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--rose)}
+/* chart */
+.chart{padding:16px;min-width:640px}
+.chart svg{display:block;width:100%;height:auto}
+.chart text{fill:var(--muted);font:12px var(--body)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.85rem;color:var(--muted);padding:0 16px 14px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+ol.levers{margin:0;padding-left:22px;display:grid;gap:10px;max-width:72ch}
+.tasks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.tasks li{display:flex;gap:10px;align-items:flex-start}
+.tasks li::before{content:"";flex:none;width:14px;height:14px;margin-top:5px;border:2px solid var(--green);border-radius:3px}
+footer{border-top:1px solid var(--line);padding-top:20px;font-size:.85rem;color:var(--muted)}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Strategy roadmap and LTV strategy · as of 17 October 2026</div>
+  <div class="kh">ផ្កាម្អម</div>
+  <h1>Pka Ma'oum Roadmap 2026–2028</h1>
+  <p class="motto">"Rooted in Khmer Heritage, Served with Heart."</p>
+  <p class="lead">Pka Ma'oum opens its garden in November 2027 on a USD 30,000 budget, breaks even in February 2028, pays back the investment in about 12 months of trading, and grows to about USD 30,000 monthly revenue by December 2028. Growth comes from guests who return.</p>
+  <div class="facts">
+    <div class="fact"><b>Nov 2027</b><span>Soft and grand opening</span></div>
+    <div class="fact"><b>43 / day</b><span>Break-even covers ($13,600 a month)</span></div>
+    <div class="fact"><b>$259,600</b><span>2028 revenue, 21% EBITDA</span></div>
+    <div class="fact"><b>20 : 1</b><span>Blended LTV:CAC (target 8:1)</span></div>
+  </div>
+</header>
+
+<section>
+  <div class="eyebrow">Foundation</div>
+  <h2>Mission, values and principles</h2>
+  <div class="scroll"><table>
+    <tr><th>Element</th><th>Statement</th></tr>
+    <tr><td>Mission</td><td>Authentic Flavours. Genuine Hospitality. To celebrate Cambodia's culinary heritage with authentic Khmer cuisine and quality Western steaks in a beautiful garden, delivering heartfelt hospitality and memorable dining while building a responsible, profitable and sustainable business.</td></tr>
+    <tr><td>Values</td><td>Authenticity · Quality · Hospitality · Respect &amp; Teamwork · Sustainability &amp; Accountability</td></tr>
+    <tr><td>Golden rule</td><td>Always double-check; never compromise quality or guest safety. Seven golden rules apply in daily operations.</td></tr>
+    <tr><td>Owner advantage</td><td>25+ years of restaurant and hospitality experience, applied to menu, service, cost control and team leadership.</td></tr>
+  </table></div>
+  <ul class="principles">
+    <li><b>Cash before design.</b> Lease, kitchen, working capital and a reserve are funded first; decoration and marketing get what remains.</li>
+    <li><b>Test before you build.</b> Pop-up tastings in 2027 prove the menu and prices before the lease is signed.</li>
+    <li><b>Repeat guests are the business.</b> A guest who returns 10 times a year is worth 10 tourists.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="eyebrow">Roadmap</div>
+  <h2>Six phases from concept to growth</h2>
+  <p>Each phase must pass its gate before money for the next is committed. The owner leads every phase; the Head Chef joins in August 2027 and the Restaurant Manager in September 2027.</p>
+  <div class="scroll"><div class="gantt" id="gantt">
+    <div class="years"><div></div><div><span>2026</span><span>2027</span><span>2028</span></div></div>
+  </div></div>
+  <div class="scroll"><table>
+    <tr><th>Phase</th><th>Key milestones</th><th>Owner</th><th class="n">Budget</th><th>Gate to pass</th></tr>
+    <tr><td><b>0 Foundation</b><br><span class="note">Oct–Dec 2026</span></td><td>Brand foundation signed off; business plan and financial model v1; draft menu of 25 Khmer and 6 steak/grill items with costing</td><td>Owner</td><td class="n">$0</td><td>Plan approved; menu food cost ≤ 34% on paper</td></tr>
+    <tr><td><b>1 Research &amp; validate</b><br><span class="note">Jan–Apr 2027</span></td><td>Visit 15+ competitors; survey 150+ guests; 3 pop-up tastings; shortlist beef, vegetable, rice and drinks suppliers; shortlist 5 sites</td><td>Owner</td><td class="n">$400</td><td>Tasting score ≥ 4.3/5; 60%+ would return; 3 reliable beef suppliers</td></tr>
+    <tr><td><b>2 Plan &amp; secure</b><br><span class="note">May–Jul 2027</span></td><td>Company and tax registration; final recipes and costing; lease signed (3+ years); 3 contractor quotes</td><td>Owner + accountant</td><td class="n">$6,200</td><td>Rent ≤ $1,200/month (≤ 8% of sales); within budget</td></tr>
+    <tr><td><b>3 Build &amp; equip</b><br><span class="note">Aug–Sep 2027</span></td><td>Garden and kitchen fit-out; equipment; POS and loyalty app; permits; logo, menu design, signage</td><td>Owner + contractor + Head Chef</td><td class="n">$15,300</td><td>On time, within budget; kitchen passes hygiene check</td></tr>
+    <tr><td><b>4 Pre-opening</b><br><span class="note">Oct–mid Nov 2027</span></td><td>Hire full team; SOPs; golden-rules training; 2 weeks of mock service; launch marketing; soft opening</td><td>Owner + Manager + Head Chef</td><td class="n">$3,600</td><td>Team 100% trained; ticket time ≤ 15 min; 1,000 social followers</td></tr>
+    <tr><td><b>5 Launch &amp; stabilise</b><br><span class="note">Nov 2027–Apr 2028</span></td><td>Grand opening; daily sales and cost reports; weekly menu engineering; guest details captured at every bill</td><td>Owner + Manager</td><td class="n">$4,500</td><td>Break-even by Feb 2028; Google 4.5+; food cost ≤ 34% from month 4</td></tr>
+    <tr><td><b>6 Grow</b><br><span class="note">May–Dec 2028</span></td><td>Loyalty tiers; steak nights and Khmer heritage events; corporate accounts; private garden bookings; delivery; expansion review</td><td>Owner + Manager</td><td class="n">Operating cash</td><td>~$30,000/month by Dec 2028; EBITDA 15%+; LTV:CAC 8:1+</td></tr>
+    <tr class="total"><td>Total start-up</td><td></td><td></td><td class="n">$30,000</td><td></td></tr>
+  </table></div>
+</section>
+
+<section>
+  <div class="eyebrow">Budget</div>
+  <h2>Where the USD 30,000 goes</h2>
+  <p>Fit-out and kitchen take 42%, and 15% is held back as working capital and reserve.</p>
+  <div class="scroll"><table>
+    <tr><th>Budget line</th><th class="n">USD</th><th class="n">Share</th><th>Phase</th></tr>
+    <tr><td>Kitchen equipment (charcoal grill, chillers, freezer, stoves, hood)</td><td class="n">6,500</td><td class="n">22%</td><td>Build</td></tr>
+    <tr><td>Garden and dining fit-out (shade, lighting, plants, signage)</td><td class="n">6,000</td><td class="n">20%</td><td>Build</td></tr>
+    <tr><td>Lease deposit (3 months) + first month rent, ~$1,200/month</td><td class="n">4,800</td><td class="n">16%</td><td>Secure</td></tr>
+    <tr><td>Furniture, tableware, smallwares, uniforms</td><td class="n">2,800</td><td class="n">9%</td><td>Build</td></tr>
+    <tr><td>Working capital (first 2 months)</td><td class="n">2,500</td><td class="n">8%</td><td>Launch</td></tr>
+    <tr><td>Contingency reserve</td><td class="n">2,000</td><td class="n">7%</td><td>All</td></tr>
+    <tr><td>Opening food and beverage inventory</td><td class="n">1,500</td><td class="n">5%</td><td>Pre-opening</td></tr>
+    <tr><td>Registration, licences, permits, POS and loyalty app</td><td class="n">1,400</td><td class="n">5%</td><td>Secure / Build</td></tr>
+    <tr><td>Pre-opening marketing and pop-up tastings</td><td class="n">1,300</td><td class="n">4%</td><td>Validate / Pre-opening</td></tr>
+    <tr><td>Pre-opening payroll and training (3 weeks)</td><td class="n">1,200</td><td class="n">4%</td><td>Pre-opening</td></tr>
+    <tr class="total"><td>Total</td><td class="n">30,000</td><td class="n">100%</td><td></td></tr>
+  </table></div>
+</section>
+
+<section>
+  <div class="eyebrow">Forecast</div>
+  <h2>Monthly revenue and profit, Nov 2027 – Dec 2028</h2>
+  <p>A 60-seat garden at $10.50–11.50 per guest breaks even at about 43 covers a day. Ramping from 30 to 90 covers a day turns the first profit in February 2028. Cash dips to about zero in January 2028, so keep a $3,000 standby and negotiate 2–3 rent-free fit-out months.</p>
+  <div class="scroll"><div class="chart"><svg id="chart" viewBox="0 0 900 320" role="img" aria-label="Monthly revenue and EBITDA bar chart"></svg></div>
+  <div class="legend"><span><i style="background:var(--green)"></i>Revenue</span><span><i style="background:var(--gold)"></i>EBITDA (before owner salary and tax)</span><span><i style="background:var(--rose)"></i>Loss</span></div></div>
+</section>
+
+<section>
+  <div class="eyebrow">Reality check</div>
+  <h2>Concept infographic figures checked</h2>
+  <p>The daily revenue target and the cost allocation need correcting; the payback period holds.</p>
+  <div class="scroll"><table>
+    <tr><th>Figure</th><th>Infographic</th><th>Realistic for a $30k, 60-seat garden</th><th>Verdict</th></tr>
+    <tr><td>Year 1 daily revenue</td><td>$4,000–5,000</td><td>$600–900 in Year 1; $1,000–1,200 by late 2028. $4,000 a day needs 300–400 guests daily. Realistic if meant per week.</td><td><span class="verdict bad">About 6x too high</span></td></tr>
+    <tr><td>F&amp;B cost</td><td>55%</td><td>30–35% of revenue; steaks 40–45% balanced by Khmer dishes at 25–30%</td><td><span class="verdict bad">Too high</span></td></tr>
+    <tr><td>Labour</td><td>18%</td><td>18–21%</td><td><span class="verdict ok">Realistic</span></td></tr>
+    <tr><td>Rent &amp; utilities</td><td>12%</td><td>10–12%; rent ≤ 8% of sales</td><td><span class="verdict ok">Realistic</span></td></tr>
+    <tr><td>Marketing</td><td>8%</td><td>6–8% at launch, then 3–4%</td><td><span class="verdict warn">High ongoing</span></td></tr>
+    <tr><td>Others</td><td>7%</td><td>6–8%</td><td><span class="verdict ok">Realistic</span></td></tr>
+    <tr><td>Allocation total</td><td>100%</td><td>About 80%, leaving 15–20% profit</td><td><span class="verdict bad">No profit left</span></td></tr>
+    <tr><td>Payback</td><td>18–24 months</td><td>~12 months of EBITDA; ~15 months with a $1,000/month owner salary</td><td><span class="verdict ok">Safe target</span></td></tr>
+  </table></div>
+  <p class="note">Menu scope: open with Australian ribeye and striploin plus quality local beef, offer tomahawk by pre-order, and keep a short wine list, on consignment where possible.</p>
+</section>
+
+<section>
+  <div class="eyebrow">LTV strategy</div>
+  <h2>What each guest is worth</h2>
+  <p>A blended guest is worth $155 in lifetime contribution against $7.90 to acquire. Expatriates are the most valuable segment, local families bring the volume, and tourists are won through free reviews, not paid ads.</p>
+  <div class="scroll"><table>
+    <tr><th>Segment</th><th class="n">Share</th><th class="n">Spend / visit</th><th class="n">Visits / year</th><th class="n">Retention</th><th class="n">LTV</th><th class="n">CAC</th><th class="n">LTV:CAC</th></tr>
+    <tr><td>Expatriates &amp; Cambodian professionals</td><td class="n">25%</td><td class="n">$15</td><td class="n">14</td><td class="n">65%</td><td class="n">$308</td><td class="n">$10</td><td class="n">31 : 1</td></tr>
+    <tr><td>Business &amp; corporate diners</td><td class="n">15%</td><td class="n">$16</td><td class="n">8</td><td class="n">55%</td><td class="n">$154</td><td class="n">$15</td><td class="n">10 : 1</td></tr>
+    <tr><td>Local Cambodian families &amp; groups</td><td class="n">45%</td><td class="n">$9</td><td class="n">10</td><td class="n">60%</td><td class="n">$119</td><td class="n">$5</td><td class="n">24 : 1</td></tr>
+    <tr><td>Tourists &amp; visitors</td><td class="n">15%</td><td class="n">$14</td><td class="n">1.2</td><td class="n">5%</td><td class="n">$11</td><td class="n">$6</td><td class="n">1.8 : 1</td></tr>
+    <tr class="total"><td>Blended</td><td class="n">100%</td><td class="n">$12.30</td><td class="n">9.4</td><td class="n">52%</td><td class="n">$155</td><td class="n">$7.90</td><td class="n">20 : 1</td></tr>
+  </table></div>
+  <p class="note">LTV = annual spend × 60% contribution margin × (1 + 10%) ÷ (1 + 10% − annual retention). Customer = one guest. CAC = marketing and welcome-offer spend per new guest recorded in the CRM.</p>
+  <h3>Eight levers that raise LTV</h3>
+  <ol class="levers">
+    <li><b>Capture every guest.</b> Phone or Telegram at every bill, linked to the loyalty app. 40% of bills at launch, 65% by late 2028.</li>
+    <li><b>Bring new guests back within 90 days.</b> A thank-you message next day and a 30-day return offer (free Khmer dessert or welcome drink). Repeat rate 25% at launch, 38% by late 2028.</li>
+    <li><b>Raise visit frequency.</b> Tuesday steak night, weekend Khmer family set menus, a monthly heritage dinner, Khmer New Year and Pchum Ben menus.</li>
+    <li><b>Raise spend per visit.</b> Servers recommend sides, sauces and drinks with every steak; sharing platters for groups. $10.50 → $11.50 from June 2028.</li>
+    <li><b>Three-tier loyalty.</b> Green: birthday dessert. Silver (5 visits in 6 months): 5% back, priority booking. Gold (12 visits a year): 10% back, a free garden-table booking, owner's table invitation. 800 members by Feb 2028, 3,000 by Dec 2028.</li>
+    <li><b>Corporate accounts.</b> Monthly invoicing, set lunches and private garden events for offices, embassies and NGOs. 15 active accounts by Dec 2028.</li>
+    <li><b>Recover unhappy guests.</b> Golden Rule 5: resolve at the table, log it, follow up next day. 95% resolved on the same visit.</li>
+    <li><b>Tourists through reviews.</b> QR review requests, hotel concierge partnerships at 10% commission, a small Khmer spice gift. Google 4.7+ with 400+ reviews by Dec 2028.</li>
+  </ol>
+</section>
+
+<section>
+  <div class="eyebrow">Scorecard</div>
+  <h2>KPIs reviewed every week</h2>
+  <div class="scroll"><table>
+    <tr><th>KPI</th><th>Launch<br>Nov 27–Feb 28</th><th>Stabilise<br>Mar–Jun 28</th><th>Grow<br>Jul–Dec 28</th><th>Owner</th></tr>
+    <tr><td>Covers per day</td><td>30–50</td><td>55–62</td><td>62–90</td><td>Manager</td></tr>
+    <tr><td>Food cost %</td><td>≤ 38%</td><td>≤ 34%</td><td>≤ 34%</td><td>Head Chef</td></tr>
+    <tr><td>Monthly EBITDA</td><td>Break-even by Feb</td><td>$2,000–4,000</td><td>$4,000–10,000</td><td>Owner</td></tr>
+    <tr><td>90-day repeat rate</td><td>25%</td><td>32%</td><td>38%</td><td>Owner</td></tr>
+    <tr><td>Blended LTV:CAC</td><td>5:1+</td><td>7:1+</td><td>8:1+</td><td>Owner</td></tr>
+    <tr><td>Average spend per guest</td><td>$10.50</td><td>$10.50</td><td>$11.50</td><td>Manager</td></tr>
+    <tr><td>Guests captured in CRM</td><td>40% of bills</td><td>55%</td><td>65%</td><td>Manager</td></tr>
+    <tr><td>Loyalty members</td><td>800</td><td>1,800</td><td>3,000</td><td>Manager</td></tr>
+    <tr><td>Google rating</td><td>4.5+</td><td>4.6+</td><td>4.7+, 400+ reviews</td><td>Owner</td></tr>
+    <tr><td>Net Promoter Score</td><td>50+</td><td>55+</td><td>60+</td><td>Owner</td></tr>
+    <tr><td>Labour % of revenue</td><td>&lt; 50% (ramp)</td><td>&lt; 28%</td><td>&lt; 22%</td><td>Owner</td></tr>
+    <tr><td>Staff turnover (annualised)</td><td>&lt; 40%</td><td>&lt; 35%</td><td>&lt; 30%</td><td>Owner</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <div class="eyebrow">Risks</div>
+  <h2>Main risks and responses</h2>
+  <div class="scroll"><table>
+    <tr><th>Risk</th><th>Response</th></tr>
+    <tr><td>Cash runs short in the first 3 months</td><td>$3,000 standby reserve; 2–3 rent-free fit-out months; weekly cash review</td></tr>
+    <tr><td>Imported beef prices or supply</td><td>3 approved suppliers; local beef options; menu prices reviewed quarterly</td></tr>
+    <tr><td>Fit-out overruns</td><td>3 quotes, fixed-price contract, contingency released only by the owner</td></tr>
+    <tr><td>Rainy season (Jun–Oct) cuts garden seating</td><td>Covered section for at least half the seats; rainy-season promotions and delivery</td></tr>
+    <tr><td>Key staff leave</td><td>Clear career path, service charge share, cross-training on every station</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <div class="eyebrow">Next 90 days · to January 2027</div>
+  <h2>What happens first</h2>
+  <ul class="tasks">
+    <li>Approve the mission, values, golden rules and motto as the official foundation</li>
+    <li>Correct the infographic: daily revenue $600–900 for Year 1 and food cost 30–35%</li>
+    <li>Finish the business plan and financial model v1, starting from the spreadsheet</li>
+    <li>Draft the 31-item opening menu with recipe costing</li>
+    <li>List 5 to 8 garden site areas and the site criteria</li>
+    <li>Book the first pop-up tasting for February 2027</li>
+  </ul>
+</section>
+
+<footer>Pka Ma'oum · Khmer Garden Restaurant &amp; Steakhouse · Phnom Penh. All figures in USD are planning assumptions, to be checked against real quotes and the 2027 tastings. Full model with formulas: Pka_Maoum_Roadmap_LTV_Model.xlsx.</footer>
+</div>
+
+<script>
+(function(){
+  // Gantt: month index 0 = Oct 2026, 27 months to Dec 2028
+  var phases=[["0 Foundation",0,3,""],["1 Research & validate",3,4,""],["2 Plan & secure",7,3,""],["3 Build & equip",10,2,"gold"],["4 Pre-opening",12,1.5,"gold"],["5 Launch & stabilise",13.5,5.5,"rose"],["6 Grow",19,8,""]];
+  var g=document.getElementById("gantt");
+  phases.forEach(function(p){
+    var row=document.createElement("div");row.className="grow";
+    var l=document.createElement("div");l.className="glabel";l.textContent=p[0];
+    var t=document.createElement("div");t.className="track";
+    var b=document.createElement("div");b.className="bar "+p[3];
+    b.style.left=(p[1]/27*100)+"%";b.style.width=(p[2]/27*100)+"%";
+    t.appendChild(b);
+    if(p[0].indexOf("5")===0){var m=document.createElement("div");m.className="open-mark";m.style.left=(13.5/27*100)+"%";m.title="Opening, Nov 2027";t.appendChild(m);b.textContent="Opening Nov 2027";}
+    row.appendChild(l);row.appendChild(t);g.appendChild(row);
+  });
+  // Chart
+  var months=["Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var rev=[9450,11970,13860,15750,17325,18900,19845,21390,21390,22425,23460,25875,28290,31050];
+  var eb=[-2914,-1477,-400,1308,2268,3229,3805,4148,4148,4779,5411,6884,8308,9909];
+  var s=document.getElementById("chart"),NS="http://www.w3.org/2000/svg";
+  var W=900,H=320,L=56,R=12,T=14,B=44,max=35000,min=-5000;
+  var y=function(v){return T+(max-v)/(max-min)*(H-T-B)};
+  function el(n,a,txt){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;s.appendChild(e);return e;}
+  for(var v=-5000;v<=35000;v+=5000){
+    el("line",{x1:L,x2:W-R,y1:y(v),y2:y(v),style:"stroke:var("+(v===0?"--muted":"--line")+")","stroke-width":v===0?1.2:1});
+    el("text",{x:L-8,y:y(v)+4,"text-anchor":"end"},"$"+(v/1000)+"k");
+  }
+  var step=(W-L-R)/months.length,bw=step*0.36;
+  months.forEach(function(m,i){
+    var x=L+i*step+step*0.12;
+    el("rect",{x:x,y:y(rev[i]),width:bw,height:y(0)-y(rev[i]),style:"fill:var(--green)",rx:2}).appendChild(document.createElementNS(NS,"title")).textContent=m+": revenue $"+rev[i].toLocaleString();
+    var e=eb[i],top=e>=0?y(e):y(0),h=Math.abs(y(e)-y(0));
+    el("rect",{x:x+bw+2,y:top,width:bw,height:h,style:"fill:var("+(e>=0?"--gold":"--rose")+")",rx:2}).appendChild(document.createElementNS(NS,"title")).textContent=m+": EBITDA $"+e.toLocaleString();
+    el("text",{x:L+i*step+step/2,y:H-B+18,"text-anchor":"middle"},m);
+  });
+  el("text",{x:L+step,y:H-6,"text-anchor":"middle"},"2027");
+  el("text",{x:L+8*step,y:H-6,"text-anchor":"middle"},"2028");
+  el("text",{x:L+13.5*step,y:y(31050)-6,"text-anchor":"middle"},"$31.1k");
+})();
+</script>
