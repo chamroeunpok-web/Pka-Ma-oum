@@ -55,6 +55,7 @@ document.documentElement.classList.add('js');
       t.tabIndex = on ? 0 : -1;
       document.getElementById('tab-' + t.dataset.tab).hidden = !on;
       if (on && focus) t.focus();
+      if (on && t.parentNode.scrollWidth > t.parentNode.clientWidth) t.parentNode.scrollTo({ left: t.offsetLeft - (t.parentNode.clientWidth - t.offsetWidth) / 2, behavior: 'smooth' });
     });
   }
   tabs.forEach(function (t, i) {
