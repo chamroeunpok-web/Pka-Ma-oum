@@ -1,0 +1,5 @@
+# Pka Ma'oum: let all search engines read the whole site
+User-agent: *
+Allow: /
+
+Sitemap: https://pka-maoum.netlify.app/sitemap.xml
