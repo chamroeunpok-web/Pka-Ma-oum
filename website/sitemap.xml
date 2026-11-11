@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://pka-maoum.netlify.app/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <image:image><image:loc>https://pka-maoum.netlify.app/images/hero-garden.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pka-maoum.netlify.app/images/khmer-dishes.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pka-maoum.netlify.app/images/drinks.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pka-maoum.netlify.app/images/garden-dining.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pka-maoum.netlify.app/images/terrace-pavilion.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pka-maoum.netlify.app/images/steak-platter.jpg</image:loc></image:image>
+  </url>
+</urlset>
