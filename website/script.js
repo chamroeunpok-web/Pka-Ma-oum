@@ -26,12 +26,12 @@ document.documentElement.classList.add('js');
 
   // Active link highlight
   var links = Array.prototype.slice.call(nav.querySelectorAll('a:not(.btn)'));
-  var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  var sections = links.map(function (a) { var h = a.getAttribute('href'); return h.charAt(0) === '#' && h.length > 1 ? document.querySelector(h) : null; });
   if ('IntersectionObserver' in window) {
     var spy = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting) {
-          links.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id); });
+          links.forEach(function (l) { if (l.getAttribute('href').charAt(0) === '#') l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id); });
         }
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
@@ -69,6 +69,8 @@ document.documentElement.classList.add('js');
     a.addEventListener('click', function () { selectTab(a.dataset.tab); });
   });
 
+  if (tabs.length && /^#menus-(\w+)$/.test(location.hash)) { var tn = location.hash.slice(7); if (document.getElementById('tab-' + tn)) { selectTab(tn); var mn = document.getElementById('menus'); if (mn) setTimeout(function () { mn.scrollIntoView(); }, 60); } }
+
   // Gallery lightbox
   var lb = document.querySelector('.lightbox');
   if (lb && typeof lb.showModal === 'function') {
@@ -86,13 +88,14 @@ document.documentElement.classList.add('js');
 
   // Event enquiry button presets occasion
   document.querySelectorAll('[data-occasion]').forEach(function (a) {
-    a.addEventListener('click', function () { document.getElementById('b-occasion').value = a.dataset.occasion; });
+    a.addEventListener('click', function () { var o = document.getElementById('b-occasion'); if (o) o.value = a.dataset.occasion; });
   });
 
   // Booking form (front-end only: connect to a booking service or email before launch)
   var form = document.querySelector('.book-form');
   var date = document.getElementById('b-date');
   var today = new Date();
+  if (form && date) {
   date.min = today.toISOString().slice(0, 10);
   var msg = form.querySelector('.form-msg');
   form.addEventListener('submit', function (e) {
@@ -117,10 +120,11 @@ document.documentElement.classList.add('js');
       ' has been received. We will confirm shortly.';
     form.reset();
   });
+  }
 
   // Newsletter
   var nl = document.querySelector('.newsletter');
-  nl.addEventListener('submit', function (e) {
+  if (nl) nl.addEventListener('submit', function (e) {
     e.preventDefault();
     var input = nl.querySelector('input');
     var out = nl.querySelector('.nl-msg');
@@ -129,5 +133,6 @@ document.documentElement.classList.add('js');
     input.value = '';
   });
 
-  document.getElementById('year').textContent = Math.max(2027, today.getFullYear());
+  var yr = document.getElementById('year');
+  if (yr) yr.textContent = Math.max(2027, today.getFullYear());
 })();
