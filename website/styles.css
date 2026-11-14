@@ -142,16 +142,6 @@ h2{font-size:clamp(2.1rem,4.4vw,3.4rem);letter-spacing:.01em;margin-bottom:22px}
 
 /* Experiences */
 .experiences{padding:140px 0 60px;background:var(--forest)}
-.feature{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(36px,7vw,110px);align-items:center;margin-bottom:120px}
-.feature.reverse{grid-template-columns:1fr 1.15fr}
-.feature.reverse .feature-img{order:2}
-.feature-img{margin:0;overflow:hidden;aspect-ratio:4/3;position:relative;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
-.feature-img::after{content:"";position:absolute;inset:14px;border:1px solid rgba(220,188,114,.35);pointer-events:none}
-.feature-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
-.feature:hover .feature-img img{transform:scale(1.04)}
-.feature-num{font-family:var(--display);font-size:1rem;letter-spacing:.2em;color:var(--gold);margin-bottom:18px}
-.feature h3{font-size:clamp(1.9rem,3.4vw,2.7rem);margin-bottom:22px}
-.feature-body p:not(.feature-num){color:var(--on-dark-muted);max-width:460px;margin-bottom:32px}
 
 /* Private dining */
 .events{padding:150px 0;background:var(--forest-0);overflow:hidden}
@@ -302,8 +292,6 @@ address small{display:block;font-family:var(--body);font-size:.85rem;color:var(-
   .tasting-prices{grid-template-columns:1fr 1fr}
   .tasting-prices div:nth-child(3){border-left:0}
   .tasting-prices div:nth-child(n+3){border-top:1px solid var(--line)}
-  .feature,.feature.reverse{grid-template-columns:1fr;gap:32px;margin-bottom:90px}
-  .feature.reverse .feature-img{order:0}
   .reserve-grid,.visit-grid{grid-template-columns:1fr}
   .events-media::after{background:rgba(6,14,10,.6)}
   .events-card{margin:0 auto}
@@ -334,4 +322,38 @@ address small{display:block;font-family:var(--body);font-size:.85rem;color:var(-
   html{scroll-behavior:auto}
   .js .reveal{opacity:1;transform:none}
   .marquee{overflow-x:auto}
+}
+
+/* Experiences: cinematic inset panels */
+.experiences{padding:140px 0 clamp(14px,2vw,30px)}
+.panels{display:grid;gap:clamp(14px,2vw,30px);padding:0 clamp(14px,2vw,30px)}
+.panel{position:relative;min-height:min(92vh,900px);display:flex;align-items:flex-end;justify-content:center;overflow:hidden;isolation:isolate;background:var(--forest-0)}
+.panel-img{position:absolute;inset:0;margin:0;z-index:-1}
+.panel-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 2.4s var(--ease)}
+.panel.in .panel-img img{transform:scale(1)}
+.panel:hover .panel-img img{transform:scale(1.03)}
+.panel-img::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 50% 78%,rgba(6,14,10,.55),rgba(6,14,10,0) 75%),linear-gradient(180deg,rgba(6,14,10,.35) 0%,rgba(6,14,10,0) 28%,rgba(6,14,10,.2) 50%,rgba(6,14,10,.9) 100%)}
+.panel::before{content:"";position:absolute;inset:clamp(12px,1.6vw,22px);border:1px solid rgba(220,188,114,.28);pointer-events:none;z-index:1}
+.panel-body{position:relative;z-index:2;max-width:620px;text-align:center;padding:0 24px clamp(64px,9vh,110px)}
+.panel-num{font-family:var(--display);font-size:1rem;letter-spacing:.3em;color:var(--gold-2);margin-bottom:14px}
+.panel h3{font-size:clamp(2.4rem,5.4vw,4.4rem);font-weight:400;margin-bottom:18px;text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.panel-body p:not(.panel-num){color:#e6e0d0;font-size:1.02rem;margin:0 auto 30px;max-width:520px;text-shadow:0 1px 14px rgba(0,0,0,.6)}
+.js .panel.reveal{opacity:1;transform:none}
+.js .panel.reveal .panel-body{opacity:0;transform:translateY(30px);transition:opacity 1.2s var(--ease) .25s,transform 1.2s var(--ease) .25s}
+.js .panel.reveal.in .panel-body{opacity:1;transform:none}
+/* Closing: image backdrop */
+.closing{overflow:hidden;isolation:isolate}
+.closing-media{position:absolute;inset:0;z-index:-1}
+.closing-media img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.closing-media::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 50%,rgba(6,14,10,.78),rgba(6,14,10,.55) 70%,rgba(6,14,10,.7))}
+.closing{padding:clamp(140px,18vh,200px) 0}
+@media (max-width:900px){
+  .experiences{padding-top:90px}
+  .panel{min-height:78vh}
+  .panel-body{padding-bottom:56px}
+  .panel-body p:not(.panel-num){font-size:.95rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .panel-img img,.panel.in .panel-img img{transform:none;transition:none}
+  .js .panel.reveal .panel-body{opacity:1;transform:none}
 }
