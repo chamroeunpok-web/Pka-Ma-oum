@@ -90,7 +90,7 @@ h2{font-size:clamp(2.1rem,4.4vw,3.4rem);letter-spacing:.01em;margin-bottom:22px}
 .marquee-track{display:flex;gap:18px;width:max-content;animation:scroll 60s linear infinite}
 .marquee:hover .marquee-track{animation-play-state:paused}
 .marquee img{height:clamp(240px,32vw,420px);width:auto;object-fit:cover;aspect-ratio:3/4}
-.marquee img:nth-child(3n+2){aspect-ratio:4/3}
+.marquee img:nth-child(even){aspect-ratio:4/3}
 @keyframes scroll{to{transform:translateX(calc(-50% - 9px))}}
 
 /* Menus (light) */
