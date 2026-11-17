@@ -136,3 +136,33 @@ document.documentElement.classList.add('js');
   var yr = document.getElementById('year');
   if (yr) yr.textContent = Math.max(2027, today.getFullYear());
 })();
+
+// Running video hero: muted, inline, loads only when it can play smoothly
+(function () {
+  var v = document.querySelector('.hero-video');
+  if (!v) return;
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var conn = navigator.connection || {};
+  if (reduce || conn.saveData || /(^|-)2g$/.test(conn.effectiveType || '')) return; // keep the still photo
+  var tall = window.innerHeight > window.innerWidth;
+  var ext = v.canPlayType('video/mp4; codecs="avc1.640028"') ? '.mp4' : '.webm';
+  v.src = (tall ? v.dataset.srcTall : v.dataset.srcWide) + ext;
+  v.muted = true;
+  var btn = document.querySelector('.video-toggle');
+  var userPaused = false;
+  v.addEventListener('playing', function () { v.classList.add('is-playing'); if (btn) btn.hidden = false; });
+  function play() { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  play();
+  if (btn) btn.addEventListener('click', function () {
+    userPaused = !v.paused;
+    if (userPaused) v.pause(); else play();
+    btn.setAttribute('aria-pressed', userPaused);
+    btn.querySelector('.vt-label').textContent = userPaused ? 'Play video' : 'Pause video';
+  });
+  // Pause while the hero is off screen to save battery
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (userPaused) return; if (e.isIntersecting) play(); else v.pause(); });
+    }).observe(v);
+  }
+})();
