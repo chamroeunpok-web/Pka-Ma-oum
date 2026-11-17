@@ -52,8 +52,8 @@
   <div class="nav-wrap">
     <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><span></span><span></span></button>
     <nav class="main-nav" id="main-nav" aria-label="Main">
-      <a href="#home">Home</a>
       <a href="about.html">About Us</a>
+      <a href="#steakhouse">Steakhouse</a>
       <a href="#menus">Menus</a>
       <a href="#menus" data-tab="drinks">Cocktails</a>
       <a href="#events">Private Dining</a>
@@ -82,7 +82,7 @@
     <p class="hero-lede">Heritage Khmer recipes, prime steaks over open charcoal, cocktails built on the Cambodian pantry, and lantern-lit evenings under the trees.</p>
     <div class="hero-actions">
       <a href="#menus" class="btn btn-ghost">View Menus</a>
-      <a href="#menus" data-tab="steak" class="btn btn-ghost">The Steakhouse</a>
+      <a href="#steakhouse" class="btn btn-ghost">The Steakhouse</a>
       <a href="#reserve" class="btn btn-gold">Book a Table</a>
     </div>
   </div>
@@ -118,18 +118,50 @@
   </div>
 </section>
 
+<!-- ========== STEAKHOUSE ========== -->
+<section class="steakhouse" id="steakhouse" aria-labelledby="steak-title">
+  <div class="steak-grid">
+    <div class="steak-media reveal">
+      <figure class="steak-main"><img src="images/charcoal-steak-1600.webp" srcset="images/charcoal-steak-640.webp 640w, images/charcoal-steak-1024.webp 1024w, images/charcoal-steak-1600.webp 1600w, images/charcoal-steak-2336.webp 2336w" sizes="(max-width:900px) 100vw, 55vw" alt="Charcoal-grilled ribeye sliced on a board with Kampot green pepper and roasted garlic" loading="lazy" decoding="async" width="2336" height="1760"></figure>
+      <div class="steak-details" aria-hidden="true">
+        <figure><img src="images/charcoal-steak-1024.webp" srcset="images/charcoal-steak-640.webp 640w, images/charcoal-steak-1024.webp 1024w, images/charcoal-steak-1600.webp 1600w, images/charcoal-steak-2336.webp 2336w" sizes="(max-width:900px) 33vw, 18vw" alt="" loading="lazy" decoding="async" width="2336" height="1760" style="transform-origin:63% 60%"></figure>
+        <figure><img src="images/charcoal-steak-1024.webp" srcset="images/charcoal-steak-640.webp 640w, images/charcoal-steak-1024.webp 1024w, images/charcoal-steak-1600.webp 1600w, images/charcoal-steak-2336.webp 2336w" sizes="(max-width:900px) 33vw, 18vw" alt="" loading="lazy" decoding="async" width="2336" height="1760" style="transform-origin:80% 8%"></figure>
+        <figure><img src="images/charcoal-steak-1024.webp" srcset="images/charcoal-steak-640.webp 640w, images/charcoal-steak-1024.webp 1024w, images/charcoal-steak-1600.webp 1600w, images/charcoal-steak-2336.webp 2336w" sizes="(max-width:900px) 33vw, 18vw" alt="" loading="lazy" decoding="async" width="2336" height="1760" style="transform-origin:0% 72%"></figure>
+      </div>
+    </div>
+    <div class="steak-copy reveal">
+      <p class="eyebrow">The Steakhouse</p>
+      <h2 id="steak-title">Fire, Smoke &amp; Prime Beef</h2>
+      <p class="steak-lede">Our grill burns Cambodian hardwood charcoal. Australian grain-fed and Wagyu beef is aged in-house, seared hard over the embers, rested, then finished the Khmer way with prahok butter, Kampot pepper and tamarind.</p>
+      <ul class="cuts">
+        <li><span class="cut-name">Ribeye</span><span class="cut-meta">Australian grain-fed · 300g</span><span class="cut-price">42</span></li>
+        <li><span class="cut-name">Wagyu Striploin</span><span class="cut-meta">MB 6+ · 250g</span><span class="cut-price">68</span></li>
+        <li><span class="cut-name">Tenderloin</span><span class="cut-meta">Centre cut · 200g</span><span class="cut-price">39</span></li>
+        <li><span class="cut-name">Picanha</span><span class="cut-meta">Fat-cap rump · 300g</span><span class="cut-price">36</span></li>
+        <li><span class="cut-name">Kroeung Short Rib</span><span class="cut-meta">12-hour, bone-in · 450g</span><span class="cut-price">44</span></li>
+        <li><span class="cut-name">Tomahawk</span><span class="cut-meta">For 2–3 · 1.2kg · pre-order</span><span class="cut-price">135</span></li>
+      </ul>
+      <p class="steak-sauces"><strong>Sauces &amp; butters:</strong> Kampot green pepper jus · tamarind chimichurri · prahok butter · lemongrass &amp; garlic butter · tuk trey chili</p>
+      <div class="steak-actions">
+        <a href="#menus" data-tab="steak" class="btn btn-gold">See the Grill Menu</a>
+        <a href="#reserve" class="btn btn-ghost" data-occasion="Tomahawk pre-order">Pre-order a Tomahawk</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ========== MENUS ========== -->
 <section class="menus" id="menus" aria-labelledby="menus-title">
   <div class="container">
     <header class="section-head center reveal">
       <p class="eyebrow">The Menus</p>
-      <h2 id="menus-title">Living Khmer Cuisine &amp; Craft Cocktails</h2>
+      <h2 id="menus-title">Khmer Kitchen, Charcoal Steaks &amp; Craft Cocktails</h2>
       <p>Recipes passed down through Khmer kitchens, cooked with today's techniques and the best of Cambodia's farms, rivers and coast. Prices in US dollars.</p>
     </header>
     <div class="tabs" role="tablist" aria-label="Menu sections">
       <button role="tab" aria-selected="true" aria-controls="tab-khmer" id="t-khmer" data-tab="khmer">Khmer Kitchen</button>
       <button role="tab" aria-selected="false" aria-controls="tab-tasting" id="t-tasting" data-tab="tasting" tabindex="-1">Tasting Menu</button>
-      <button role="tab" aria-selected="false" aria-controls="tab-steak" id="t-steak" data-tab="steak" tabindex="-1">Wood Fire &amp; Grill</button>
+      <button role="tab" aria-selected="false" aria-controls="tab-steak" id="t-steak" data-tab="steak" tabindex="-1">Steakhouse &amp; Grill</button>
       <button role="tab" aria-selected="false" aria-controls="tab-drinks" id="t-drinks" data-tab="drinks" tabindex="-1">Craft Cocktails</button>
       <button role="tab" aria-selected="false" aria-controls="tab-cellar" id="t-cellar" data-tab="cellar" tabindex="-1">Zero-Proof &amp; Cellar</button>
     </div>
@@ -202,11 +234,22 @@
             <li><div><h4>Wagyu Striploin MB 6+ 250g</h4><p>Lemongrass and garlic butter, charred spring onion</p></div><span class="price">68</span></li>
             <li><div><h4>Beef Tenderloin 200g</h4><p>Prahok butter, palm sugar shallots, Kampot pepper sauce</p></div><span class="price">39</span></li>
             <li><div><h4>Tomahawk 1.2kg <em>pre-order</em></h4><p>For two to three guests, carved at the table with three Khmer sauces</p></div><span class="price">135</span></li>
+            <li><div><h4>Picanha 300g</h4><p>Fat-cap rump seared over charcoal, charred lime, pickled shallot</p></div><span class="price">36</span></li>
+            <li><div><h4>Kroeung Short Rib 450g</h4><p>Marinated in lemongrass kroeung, smoked for 12 hours, glazed over charcoal</p></div><span class="price">44</span></li>
+            <li><div><h4>Lok Lak Steak</h4><p>Seared ribeye cubes, lime and Kampot pepper dip, fried egg, tomato and watercress</p></div><span class="price">29</span></li>
+            <li><div><h4>Steak for Two <em>chef's selection</em></h4><p>Ribeye and tenderloin, kroeung potatoes, morning glory and every sauce</p></div><span class="price">95</span></li>
             <li><div><h4>Lemongrass Chicken <span lang="km">មាន់អាំង</span></h4><p>Free-range half bird, tuk trey dip, sticky rice</p></div><span class="price">18</span></li>
             <li><div><h4>Tonlé Sap Whole Fish</h4><p>Grilled in banana leaf, green mango relish, herbs</p><p class="tags"><abbr title="Gluten free">GF</abbr></p></div><span class="price">24</span></li>
           </ul>
         </div>
         <div class="menu-group">
+          <h3 class="group-title">Sauces &amp; Butters</h3>
+          <ul class="menu-list">
+            <li><div><h4>Kampot Green Pepper Jus</h4></div><span class="price">3</span></li>
+            <li><div><h4>Tamarind Chimichurri</h4></div><span class="price">3</span></li>
+            <li><div><h4>Prahok Butter</h4></div><span class="price">3</span></li>
+            <li><div><h4>Lemongrass &amp; Garlic Butter</h4></div><span class="price">3</span></li>
+          </ul>
           <h3 class="group-title">Sides to Share</h3>
           <ul class="menu-list">
             <li><div><h4>Morning Glory, Garlic &amp; Chili</h4><p class="tags"><abbr title="Vegan">VG</abbr></p></div><span class="price">6</span></li>
@@ -410,7 +453,7 @@
         <select id="b-seat" name="seat"><option>Garden</option><option>Covered terrace</option><option>No preference</option></select></div>
       <div class="field"><label for="b-email">Email <small>(optional)</small></label><input id="b-email" name="email" type="email" autocomplete="email"></div>
       <div class="field"><label for="b-occasion">Occasion</label>
-        <select id="b-occasion" name="occasion"><option>None</option><option>Birthday</option><option>Anniversary</option><option>Business dinner</option><option>Tasting menu</option><option>Private event</option></select></div>
+        <select id="b-occasion" name="occasion"><option>None</option><option>Birthday</option><option>Anniversary</option><option>Business dinner</option><option>Tasting menu</option><option>Tomahawk pre-order</option><option>Private event</option></select></div>
       <div class="field full"><label for="b-notes">Special requests</label><textarea id="b-notes" name="notes" rows="3" placeholder="Allergies, dietary needs, high chair, tomahawk pre-order…"></textarea></div>
       <div class="full form-foot">
         <button type="submit" class="btn btn-gold">Request Reservation</button>
@@ -480,7 +523,7 @@
         <span class="brand-kh" lang="km">ផ្កាម្អម</span>
         <span class="brand-en">Pka Ma'oum</span>
       </a>
-      <p>Living Khmer Cuisine &amp; Craft Cocktails<br>Garden Restaurant · Phnom Penh, Cambodia</p>
+      <p>Living Khmer Cuisine, Steakhouse &amp; Craft Cocktails<br>Garden Restaurant · Phnom Penh, Cambodia</p>
     </div>
     <div class="foot-col">
       <h2>Discover</h2>
