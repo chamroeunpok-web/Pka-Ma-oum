@@ -643,3 +643,6 @@ h2:not(.statement):not(.visually-hidden),.steak-copy h2,.split-body h2{font-size
 @media (min-width:601px){h2:not(.statement){white-space:nowrap}}
 .page-hero h1{font-size:clamp(1.7rem,3.4vw,2.6rem)}
 .site-footer .foot-col h2{font-size:.72rem;line-height:1}
+/* Smaller hero logo (2026-11-19) */
+.hero-logo{width:clamp(84px,7.5vw,110px);margin-bottom:22px}
+@media (max-width:900px){.hero-logo{width:86px;margin-bottom:18px}}
