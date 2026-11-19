@@ -674,3 +674,8 @@ address{font-size:1.15rem}
 @media (max-width:600px){.menu-list h4{font-size:1.02rem}.price{font-size:1rem}.chapter-title{font-size:1.05rem}}
 .site-footer .foot-col h2{font-size:.72rem;line-height:1}
 .values h3{font-size:clamp(1.05rem,1.4vw,1.25rem)}
+/* Hero tagline (2026-11-19) */
+.hero-content .hero-kh{margin:0 0 6px}
+.hero-en{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(1rem,1.3vw,1.2rem);color:#eae2cf;letter-spacing:.02em;margin:0 0 18px;white-space:nowrap;text-shadow:0 1px 14px rgba(0,0,0,.7)}
+.hero-content .hero-tag{white-space:nowrap}
+@media (max-width:600px){.hero-en{font-size:.98rem}.hero-content .hero-tag{font-size:.58rem;letter-spacing:.12em}}
