@@ -638,3 +638,8 @@ h2{letter-spacing:.015em}
 /* Calmer statement text (2026-11-19) */
 .statement{font-size:clamp(1.2rem,1.9vw,1.55rem);line-height:1.6;max-width:680px;margin-left:auto;margin-right:auto}
 .name-kh{font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.6}
+/* One-line, smaller headings site-wide (2026-11-19) */
+h2:not(.statement):not(.visually-hidden),.steak-copy h2,.split-body h2{font-size:clamp(1.45rem,2.4vw,2.1rem);line-height:1.25}
+@media (min-width:601px){h2:not(.statement){white-space:nowrap}}
+.page-hero h1{font-size:clamp(1.7rem,3.4vw,2.6rem)}
+.site-footer .foot-col h2{font-size:.72rem;line-height:1}
