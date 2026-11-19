@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 100 100" fill="none" stroke="#d9b977" stroke-linecap="round" stroke-linejoin="round">
+  <title>Pka Ma'oum</title>
+  <circle r="46" stroke-width="2.2"/>
+  <circle r="41" stroke-width="1"/>
+  <g stroke-width=".9" fill="#d9b977" stroke="none">
+    <circle cx="0" cy="-41" r="1.6"/><circle cx="0" cy="41" r="1.6"/><circle cx="-41" cy="0" r="1.6"/><circle cx="41" cy="0" r="1.6"/>
+  </g>
+  <!-- lotus flower (pka) -->
+  <g stroke-width="2" transform="translate(0 3)">
+    <path d="M0 14C-7 4-7-12 0-24 7-12 7 4 0 14Z"/>
+    <path d="M-2 13C-12 9-18-1-17-14-8-9-3 0-2 13Z"/>
+    <path d="M2 13C12 9 18-1 17-14 8-9 3 0 2 13Z"/>
+    <path d="M-4 15C-15 15-24 9-28-1-17-3-9 4-4 15Z"/>
+    <path d="M4 15C15 15 24 9 28-1 17-3 9 4 4 15Z"/>
+  </g>
+  <path d="M0 9V-11" stroke-width="1"/>
+  <path d="M-20 24H20" stroke-width="1.6"/>
+  <path d="M-12 29.5H12" stroke-width="1"/>
+</svg>
