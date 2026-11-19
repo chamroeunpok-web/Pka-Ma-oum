@@ -17,7 +17,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230c1f16'/%3E%3Cpath d='M24 10c4 5 5 11 0 18-5-7-4-13 0-18Zm-2 19c-7-1-13-6-14-13 6 1 11 5 14 13Zm4 0c3-8 8-12 14-13-1 7-7 12-14 13Z' fill='%23c9a24a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Moul&family=Battambang:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Moul&family=Battambang:wght@400;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" type="image/webp" imagesrcset="images/hero-garden-768.webp 768w, images/hero-garden-1280.webp 1280w, images/hero-garden-1920.webp 1920w, images/hero-garden-2720.webp 2720w" imagesizes="100vw">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
@@ -79,6 +79,8 @@
   <div class="hero-content">
     <p class="kicker">Khmer Garden Restaurant &amp; Steakhouse · Phnom Penh</p>
     <h1 id="hero-title">Welcome to the Garden</h1>
+    <p class="hero-kh" lang="km">សូមស្វាគមន៍មកកាន់សួនច្បារ</p>
+    <span class="kbach" aria-hidden="true"></span>
     <p class="hero-lede">Heritage Khmer recipes, prime steaks over open charcoal, cocktails built on the Cambodian pantry, and lantern-lit evenings under the trees.</p>
     <div class="hero-actions">
       <a href="#menus" class="btn btn-ghost">View Menus</a>
@@ -90,36 +92,38 @@
 </section>
 
 <!-- ========== INTRO ========== -->
-<section class="intro" id="intro">
+<section class="intro lattice" id="intro">
   <div class="container narrow center reveal">
-    <span class="lotus-mark" aria-hidden="true"><svg viewBox="0 0 48 32"><path d="M24 2c4 5 5 11 0 18-5-7-4-13 0-18Zm-2 19C15 20 9 15 8 8c6 1 11 5 14 13Zm4 0c3-8 8-12 14-13-1 7-7 12-14 13ZM6 16c5 0 10 3 14 7-6 1-11-2-14-7Zm36 0c-3 5-8 8-14 7 4-4 9-7 14-7Z" fill="currentColor"/></svg></span>
-    <p class="eyebrow">Our Story</p>
+    <span class="kbach-mark" aria-hidden="true"></span>
+    <p class="eyebrow-kh" lang="km" aria-hidden="true">រឿងរ៉ាវរបស់យើង</p>
+      <p class="eyebrow">Our Story</p>
     <h2 class="statement">Khmer cuisine is a living tradition. We cook it that way: family and royal-court recipes, the best of Cambodia's farms, rivers and coast, an open flame and a bar that pours the flavours of the Kingdom into every glass.</h2>
     <a href="#philosophy" class="link-line">Discover our philosophy</a>
   </div>
 </section>
 
-<!-- ========== MARQUEE ========== -->
-<section class="marquee" aria-label="A first look at Pka Ma'oum">
-  <div class="marquee-track">
-    <img src="images/garden-pavilion-800.webp" srcset="images/garden-pavilion-480.webp 480w, images/garden-pavilion-800.webp 800w, images/garden-pavilion-1152.webp 1152w" sizes="(max-width:750px) 180px, (min-width:1313px) 315px, 24vw" alt="The teak pavilion with hanging brass lanterns" loading="lazy" decoding="async" width="1152" height="1536">
-    <img src="images/khmer-amok-1024.webp" srcset="images/khmer-amok-640.webp 640w, images/khmer-amok-1024.webp 1024w, images/khmer-amok-1600.webp 1600w, images/khmer-amok-2336.webp 2336w" sizes="(max-width:750px) 320px, (min-width:1313px) 560px, 43vw" alt="Fish amok steamed in a banana-leaf cup" loading="lazy" decoding="async" width="2336" height="1760">
-    <img src="images/cocktails-tall-800.webp" srcset="images/cocktails-tall-480.webp 480w, images/cocktails-tall-800.webp 800w, images/cocktails-tall-1320.webp 1320w" sizes="(max-width:750px) 180px, (min-width:1313px) 315px, 24vw" alt="A jasmine highball and a palm-sugar sour at the bar" loading="lazy" decoding="async" width="1320" height="1760">
-    <img src="images/charcoal-steak-1024.webp" srcset="images/charcoal-steak-640.webp 640w, images/charcoal-steak-1024.webp 1024w, images/charcoal-steak-1600.webp 1600w, images/charcoal-steak-2336.webp 2336w" sizes="(max-width:750px) 320px, (min-width:1313px) 560px, 43vw" alt="Charcoal-grilled ribeye with Kampot green pepper" loading="lazy" decoding="async" width="2336" height="1760">
-    <img src="images/garden-pond-800.webp" srcset="images/garden-pond-480.webp 480w, images/garden-pond-800.webp 800w, images/garden-pond-1152.webp 1152w" sizes="(max-width:750px) 180px, (min-width:1313px) 315px, 24vw" alt="The lotus pond beneath the frangipani trees" loading="lazy" decoding="async" width="1152" height="1536">
-    <img src="images/mango-salad-1024.webp" srcset="images/mango-salad-640.webp 640w, images/mango-salad-1024.webp 1024w, images/mango-salad-1600.webp 1600w, images/mango-salad-2336.webp 2336w" sizes="(max-width:750px) 320px, (min-width:1313px) 560px, 43vw" alt="Green mango salad with Khmer herbs" loading="lazy" decoding="async" width="2336" height="1760">
-    <!-- duplicate set for seamless loop -->
-    <img src="images/garden-pavilion-800.webp" srcset="images/garden-pavilion-480.webp 480w, images/garden-pavilion-800.webp 800w, images/garden-pavilion-1152.webp 1152w" sizes="(max-width:750px) 180px, (min-width:1313px) 315px, 24vw" alt="" aria-hidden="true" loading="lazy" decoding="async" width="1152" height="1536">
-    <img src="images/khmer-amok-1024.webp" srcset="images/khmer-amok-640.webp 640w, images/khmer-amok-1024.webp 1024w, images/khmer-amok-1600.webp 1600w, images/khmer-amok-2336.webp 2336w" sizes="(max-width:750px) 320px, (min-width:1313px) 560px, 43vw" alt="" aria-hidden="true" loading="lazy" decoding="async" width="2336" height="1760">
-    <img src="images/cocktails-tall-800.webp" srcset="images/cocktails-tall-480.webp 480w, images/cocktails-tall-800.webp 800w, images/cocktails-tall-1320.webp 1320w" sizes="(max-width:750px) 180px, (min-width:1313px) 315px, 24vw" alt="" aria-hidden="true" loading="lazy" decoding="async" width="1320" height="1760">
-    <img src="images/charcoal-steak-1024.webp" srcset="images/charcoal-steak-640.webp 640w, images/charcoal-steak-1024.webp 1024w, images/charcoal-steak-1600.webp 1600w, images/charcoal-steak-2336.webp 2336w" sizes="(max-width:750px) 320px, (min-width:1313px) 560px, 43vw" alt="" aria-hidden="true" loading="lazy" decoding="async" width="2336" height="1760">
-    <img src="images/garden-pond-800.webp" srcset="images/garden-pond-480.webp 480w, images/garden-pond-800.webp 800w, images/garden-pond-1152.webp 1152w" sizes="(max-width:750px) 180px, (min-width:1313px) 315px, 24vw" alt="" aria-hidden="true" loading="lazy" decoding="async" width="1152" height="1536">
-    <img src="images/mango-salad-1024.webp" srcset="images/mango-salad-640.webp 640w, images/mango-salad-1024.webp 1024w, images/mango-salad-1600.webp 1600w, images/mango-salad-2336.webp 2336w" sizes="(max-width:750px) 320px, (min-width:1313px) 560px, 43vw" alt="" aria-hidden="true" loading="lazy" decoding="async" width="2336" height="1760">
-  </div>
+<!-- ========== CHAPTERS ========== -->
+<section class="chapters" aria-label="Discover Pka Ma'oum">
+  <a class="chapter reveal" href="about.html">
+    <figure class="chapter-img"><img src="images/garden-pavilion-800.webp" srcset="images/garden-pavilion-480.webp 480w, images/garden-pavilion-800.webp 800w, images/garden-pavilion-1152.webp 1152w" sizes="(max-width:760px) 92vw, 33vw" alt="The teak pavilion with hanging brass lanterns" loading="lazy" decoding="async" width="1152" height="1536"></figure>
+    <span class="chapter-text"><span class="chapter-kh" lang="km">សួនច្បារ</span><span class="chapter-title">The Garden</span><span class="chapter-sub">Lantern-lit terraces under the frangipani</span></span>
+  </a>
+  <a class="chapter reveal" href="#steakhouse">
+    <figure class="chapter-img"><img src="images/charcoal-steak-1024.webp" srcset="images/charcoal-steak-640.webp 640w, images/charcoal-steak-1024.webp 1024w, images/charcoal-steak-1600.webp 1600w" sizes="(max-width:760px) 92vw, 33vw" alt="Charcoal-grilled ribeye with Kampot green pepper" loading="lazy" decoding="async" width="2336" height="1760"></figure>
+    <span class="chapter-text"><span class="chapter-kh" lang="km">សាច់គោអាំង</span><span class="chapter-title">Steakhouse</span><span class="chapter-sub">Prime beef over Cambodian charcoal</span></span>
+  </a>
+  <a class="chapter reveal" href="#menus" data-tab="drinks">
+    <figure class="chapter-img"><img src="images/cocktails-tall-800.webp" srcset="images/cocktails-tall-480.webp 480w, images/cocktails-tall-800.webp 800w, images/cocktails-tall-1320.webp 1320w" sizes="(max-width:760px) 92vw, 33vw" alt="A jasmine highball and a palm-sugar sour at the bar" loading="lazy" decoding="async" width="1320" height="1760"></figure>
+    <span class="chapter-text"><span class="chapter-kh" lang="km">ភេសជ្ជៈ</span><span class="chapter-title">The Bar</span><span class="chapter-sub">Cocktails from the Khmer pantry</span></span>
+  </a>
 </section>
 
 <!-- ========== STEAKHOUSE ========== -->
 <section class="steakhouse" id="steakhouse" aria-labelledby="steak-title">
+  <div class="steak-banner reveal" aria-hidden="true">
+    <img src="images/charcoal-steak-1600.webp" srcset="images/charcoal-steak-1024.webp 1024w, images/charcoal-steak-1600.webp 1600w, images/charcoal-steak-2336.webp 2336w" sizes="100vw" alt="" loading="lazy" decoding="async" width="2336" height="1760">
+    <div class="steak-banner-text"><p class="banner-kh" lang="km">សាច់គោអាំងលើធ្យូង</p><p class="banner-title">Steakhouse</p><span class="kbach" aria-hidden="true"></span><p class="banner-sub">Wood fire · Prime beef · Khmer spice</p></div>
+  </div>
   <div class="steak-grid">
     <div class="steak-media reveal">
       <figure class="steak-main"><img src="images/charcoal-steak-1600.webp" srcset="images/charcoal-steak-640.webp 640w, images/charcoal-steak-1024.webp 1024w, images/charcoal-steak-1600.webp 1600w, images/charcoal-steak-2336.webp 2336w" sizes="(max-width:900px) 100vw, 55vw" alt="Charcoal-grilled ribeye sliced on a board with Kampot green pepper and roasted garlic" loading="lazy" decoding="async" width="2336" height="1760"></figure>
@@ -130,8 +134,10 @@
       </div>
     </div>
     <div class="steak-copy reveal">
+      <p class="eyebrow-kh" lang="km" aria-hidden="true">សាច់គោអាំង</p>
       <p class="eyebrow">The Steakhouse</p>
       <h2 id="steak-title">Fire, Smoke &amp; Prime Beef</h2>
+      <span class="kbach" aria-hidden="true"></span>
       <p class="steak-lede">Our grill burns Cambodian hardwood charcoal. Australian grain-fed and Wagyu beef is aged in-house, seared hard over the embers, rested, then finished the Khmer way with prahok butter, Kampot pepper and tamarind.</p>
       <ul class="cuts">
         <li><span class="cut-name">Ribeye</span><span class="cut-meta">Australian grain-fed · 300g</span><span class="cut-price">42</span></li>
@@ -151,11 +157,13 @@
 </section>
 
 <!-- ========== MENUS ========== -->
-<section class="menus" id="menus" aria-labelledby="menus-title">
+<section class="menus lattice" id="menus" aria-labelledby="menus-title">
   <div class="container">
     <header class="section-head center reveal">
+      <p class="eyebrow-kh" lang="km" aria-hidden="true">ម្ហូប និង ភេសជ្ជៈ</p>
       <p class="eyebrow">The Menus</p>
       <h2 id="menus-title">Khmer Kitchen, Charcoal Steaks &amp; Craft Cocktails</h2>
+      <span class="kbach" aria-hidden="true"></span>
       <p>Recipes passed down through Khmer kitchens, cooked with today's techniques and the best of Cambodia's farms, rivers and coast. Prices in US dollars.</p>
     </header>
     <div class="tabs" role="tablist" aria-label="Menu sections">
@@ -204,6 +212,7 @@
         <div class="tasting-head">
           <p class="eyebrow">Seven courses · Dinner only</p>
           <h3>A Journey Through the Kingdom</h3>
+          <span class="kbach" aria-hidden="true"></span>
           <p>From the Tonlé Sap to the Kampot coast, a tasting menu that follows the seasons and the markets. Please book at least 24 hours ahead.</p>
         </div>
         <ol class="courses">
@@ -317,8 +326,10 @@
 <section class="experiences" id="experiences" aria-labelledby="exp-title">
   <div class="container">
     <header class="section-head center reveal">
+      <p class="eyebrow-kh" lang="km" aria-hidden="true">បទពិសោធន៍</p>
       <p class="eyebrow">Experiences</p>
       <h2 id="exp-title">Every Occasion, Under the Trees</h2>
+      <span class="kbach" aria-hidden="true"></span>
     </header>
   </div>
   <div class="panels">
@@ -365,8 +376,10 @@
   <div class="events-media"><img src="images/garden-evening-1280.webp" srcset="images/garden-evening-800.webp 800w, images/garden-evening-1280.webp 1280w, images/garden-evening-1900.webp 1900w" sizes="100vw" alt="The garden set for a private dinner" loading="lazy" decoding="async" width="1900" height="1536"></div>
   <div class="container">
     <div class="events-card reveal">
+      <p class="eyebrow-kh" lang="km" aria-hidden="true">ពិធីជប់លៀង</p>
       <p class="eyebrow">Private Dining &amp; Events</p>
       <h2 id="events-title">Celebrate in Our Garden</h2>
+      <span class="kbach" aria-hidden="true"></span>
       <p>From birthdays and family gatherings to company dinners and embassy receptions, our team will tailor the menu, setting and service to your occasion.</p>
       <dl class="event-list">
         <div><dt>Garden Terrace</dt><dd>Up to 60 guests · seated dinners and receptions</dd></div>
@@ -380,11 +393,13 @@
 </section>
 
 <!-- ========== PHILOSOPHY ========== -->
-<section class="philosophy" id="philosophy" aria-labelledby="phil-title">
+<section class="philosophy lattice" id="philosophy" aria-labelledby="phil-title">
   <div class="container">
     <header class="section-head center reveal">
+      <p class="eyebrow-kh" lang="km" aria-hidden="true">ទស្សនវិជ្ជា</p>
       <p class="eyebrow">Our Philosophy</p>
       <h2 id="phil-title">Rooted in Heritage, Cooked for Today</h2>
+      <span class="kbach" aria-hidden="true"></span>
     </header>
     <ul class="values reveal">
       <li><span>I</span><h3>Living Heritage</h3><p>Khmer recipes and techniques, respected at the root and refined at the stove.</p></li>
@@ -399,8 +414,10 @@
 <section class="gallery" id="gallery" aria-labelledby="gal-title">
   <div class="container">
     <header class="section-head center reveal">
+      <p class="eyebrow-kh" lang="km" aria-hidden="true">វិចិត្រសាល</p>
       <p class="eyebrow">Gallery</p>
       <h2 id="gal-title">A Garden of Good Moments</h2>
+      <span class="kbach" aria-hidden="true"></span>
       <p>A first look at the garden, the grill and the table. Photography of the finished restaurant will follow before opening.</p>
     </header>
     <div class="gallery-grid">
@@ -423,8 +440,10 @@
 <section class="reserve" id="reserve" aria-labelledby="res-title">
   <div class="container reserve-grid">
     <div class="reserve-info reveal">
+      <p class="eyebrow-kh" lang="km" aria-hidden="true">កក់តុ</p>
       <p class="eyebrow">Reservations</p>
       <h2 id="res-title">Book a Table</h2>
+      <span class="kbach" aria-hidden="true"></span>
       <p>Reserve your table in the garden. Our team confirms every request by phone or Telegram within 24 hours.</p>
       <h3>Good to know</h3>
       <ul class="policy">
@@ -464,11 +483,13 @@
 </section>
 
 <!-- ========== GOOD TO KNOW ========== -->
-<section class="faq" id="faq" aria-labelledby="faq-title">
+<section class="faq lattice" id="faq" aria-labelledby="faq-title">
   <div class="container narrow">
     <header class="section-head center reveal">
+      <p class="eyebrow-kh" lang="km" aria-hidden="true">ព័ត៌មានសំខាន់</p>
       <p class="eyebrow">Good to Know</p>
       <h2 id="faq-title">Before You Visit</h2>
+      <span class="kbach" aria-hidden="true"></span>
     </header>
     <div class="faq-list reveal">
       <details><summary>What is “living Khmer cuisine”?</summary><p>It is how we describe our cooking: real Khmer recipes, from family kitchens to the royal court, prepared with modern technique and the best Cambodian ingredients. The flavours stay true; the presentation and craft move forward.</p></details>
@@ -482,11 +503,13 @@
 </section>
 
 <!-- ========== VISIT ========== -->
-<section class="visit" id="visit" aria-labelledby="visit-title">
+<section class="visit lattice" id="visit" aria-labelledby="visit-title">
   <div class="container visit-grid">
     <div class="reveal">
+      <p class="eyebrow-kh" lang="km" aria-hidden="true">ទីតាំង និង ម៉ោងបើក</p>
       <p class="eyebrow">Visit Us</p>
       <h2 id="visit-title">Location &amp; Hours</h2>
+      <span class="kbach" aria-hidden="true"></span>
       <address>
         Phnom Penh, Cambodia<br><small>Exact address announced before opening</small>
       </address>
@@ -509,6 +532,7 @@
   <div class="closing-media" aria-hidden="true"><img src="images/garden-pond-800.webp" srcset="images/garden-pond-480.webp 480w, images/garden-pond-800.webp 800w, images/garden-pond-1152.webp 1152w, images/hero-garden-1920.webp 1920w" sizes="100vw" alt="" loading="lazy" decoding="async"></div>
   <div class="container narrow center reveal">
     <p class="closing-kh" lang="km">ផ្កាម្អម</p>
+    <span class="kbach" aria-hidden="true"></span>
     <p class="closing-line">Living Khmer cuisine, craft cocktails, great company.<br>Pka Ma'oum invites you into the garden.</p>
     <a href="#reserve" class="btn btn-gold">Reserve Your Table</a>
   </div>
@@ -516,7 +540,8 @@
 </main>
 
 <!-- ========== FOOTER ========== -->
-<footer class="site-footer">
+<footer class="site-footer lattice">
+  <span class="foot-kbach" aria-hidden="true"></span>
   <div class="container foot-grid">
     <div class="foot-col">
       <a href="#home" class="brand foot-brand" aria-label="Pka Ma'oum home">
