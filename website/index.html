@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://pka-maoum.netlify.app/">
 <meta property="og:image" content="https://pka-maoum.netlify.app/images/hero-garden-1920.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230c1f16'/%3E%3Cpath d='M24 10c4 5 5 11 0 18-5-7-4-13 0-18Zm-2 19c-7-1-13-6-14-13 6 1 11 5 14 13Zm4 0c3-8 8-12 14-13-1 7-7 12-14 13Z' fill='%23c9a24a'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="images/logo-emblem.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Moul&family=Battambang:wght@400;700&display=swap" rel="stylesheet">
@@ -53,15 +53,15 @@
     <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><span></span><span></span></button>
     <nav class="main-nav" id="main-nav" aria-label="Main">
       <a href="about.html">About Us</a>
-      <a href="#steakhouse">Steakhouse</a>
       <a href="#menus">Menus</a>
       <a href="#menus" data-tab="drinks">Cocktails</a>
       <a href="#events">Private Dining</a>
       <a href="#visit">Visit</a>
     </nav>
     <a href="#home" class="brand" aria-label="Pka Ma'oum home">
-      <span class="brand-kh" lang="km">ផ្កាម្អម</span>
-      <span class="brand-en">Pka Ma'oum</span>
+      <img class="brand-mark" src="images/logo-emblem-light.svg" alt="" width="52" height="52">
+      <span class="brand-text"><span class="brand-kh" lang="km">ផ្កាម្អម</span>
+      <span class="brand-en">Pka Ma'oum</span></span>
     </a>
     <div class="nav-right">
       <a href="tel:+85595307588" class="nav-phone">+855 95 307 588</a>
@@ -77,14 +77,13 @@
     <video class="hero-video" muted playsinline loop preload="none" aria-hidden="true" tabindex="-1" poster="images/hero-garden-1280.webp" data-src-wide="video/hero-garden-1080" data-src-tall="video/hero-garden-portrait"></video>
   </div>
   <div class="hero-content">
-    <p class="kicker">Khmer Garden Restaurant &amp; Steakhouse · Phnom Penh</p>
-    <h1 id="hero-title">Welcome to the Garden</h1>
-    <p class="hero-kh" lang="km">សូមស្វាគមន៍មកកាន់សួនច្បារ</p>
-    <span class="kbach" aria-hidden="true"></span>
-    <p class="hero-lede">Heritage Khmer recipes, prime steaks over open charcoal, cocktails built on the Cambodian pantry, and lantern-lit evenings under the trees.</p>
+    <img class="hero-logo" src="images/logo-emblem-light.svg" alt="" width="180" height="180">
+    <h1 id="hero-title" class="visually-hidden">Pka Ma'oum, Khmer Garden Restaurant &amp; Steakhouse in Phnom Penh</h1>
+    <p class="hero-kh" lang="km">រសជាតិខ្មែរ ក្នុងសួនច្បារ</p>
+    <p class="hero-en">Khmer flavours, served in the garden</p>
+    <p class="kicker hero-tag">Khmer Garden Restaurant &amp; Steakhouse · Phnom Penh</p>
     <div class="hero-actions">
       <a href="#menus" class="btn btn-ghost">View Menus</a>
-      <a href="#steakhouse" class="btn btn-ghost">The Steakhouse</a>
       <a href="#reserve" class="btn btn-gold">Book a Table</a>
     </div>
   </div>
@@ -97,7 +96,8 @@
     <span class="kbach-mark" aria-hidden="true"></span>
     <p class="eyebrow-kh" lang="km" aria-hidden="true">រឿងរ៉ាវរបស់យើង</p>
       <p class="eyebrow">Our Story</p>
-    <h2 class="statement">Khmer cuisine is a living tradition. We cook it that way: family and royal-court recipes, the best of Cambodia's farms, rivers and coast, an open flame and a bar that pours the flavours of the Kingdom into every glass.</h2>
+    <p class="statement-kh" lang="km">នៅផ្កាម្អម រាល់ចានគឺជារឿងរ៉ាវមួយ៖ រូបមន្តដែលបន្សល់ពីជំនាន់មុន ភ្លើងចង្ក្រានដ៏ក្តៅ និងភេសជ្ជៈដែលពោរពេញដោយរសជាតិនៃព្រះរាជាណាចក្រ។</p>
+    <h2 class="statement">At Pka Ma'oum, every dish tells a story: recipes passed down through generations, an open flame, and drinks filled with the flavours of the Kingdom.</h2>
     <a href="#philosophy" class="link-line">Discover our philosophy</a>
   </div>
 </section>
@@ -162,7 +162,7 @@
     <header class="section-head center reveal">
       <p class="eyebrow-kh" lang="km" aria-hidden="true">ម្ហូប និង ភេសជ្ជៈ</p>
       <p class="eyebrow">The Menus</p>
-      <h2 id="menus-title">Khmer Kitchen, Charcoal Steaks &amp; Craft Cocktails</h2>
+      <h2 id="menus-title">Kitchen, Grill &amp; Bar</h2>
       <span class="kbach" aria-hidden="true"></span>
       <p>Recipes passed down through Khmer kitchens, cooked with today's techniques and the best of Cambodia's farms, rivers and coast. Prices in US dollars.</p>
     </header>
@@ -328,7 +328,7 @@
     <header class="section-head center reveal">
       <p class="eyebrow-kh" lang="km" aria-hidden="true">បទពិសោធន៍</p>
       <p class="eyebrow">Experiences</p>
-      <h2 id="exp-title">Every Occasion, Under the Trees</h2>
+      <h2 id="exp-title">Every Occasion</h2>
       <span class="kbach" aria-hidden="true"></span>
     </header>
   </div>
@@ -398,7 +398,7 @@
     <header class="section-head center reveal">
       <p class="eyebrow-kh" lang="km" aria-hidden="true">ទស្សនវិជ្ជា</p>
       <p class="eyebrow">Our Philosophy</p>
-      <h2 id="phil-title">Rooted in Heritage, Cooked for Today</h2>
+      <h2 id="phil-title">Rooted in Heritage</h2>
       <span class="kbach" aria-hidden="true"></span>
     </header>
     <ul class="values reveal">
@@ -545,8 +545,9 @@
   <div class="container foot-grid">
     <div class="foot-col">
       <a href="#home" class="brand foot-brand" aria-label="Pka Ma'oum home">
-        <span class="brand-kh" lang="km">ផ្កាម្អម</span>
-        <span class="brand-en">Pka Ma'oum</span>
+        <img class="brand-mark" src="images/logo-emblem-light.svg" alt="" width="52" height="52">
+        <span class="brand-text"><span class="brand-kh" lang="km">ផ្កាម្អម</span>
+        <span class="brand-en">Pka Ma'oum</span></span>
       </a>
       <p>Living Khmer Cuisine, Steakhouse &amp; Craft Cocktails<br>Garden Restaurant · Phnom Penh, Cambodia</p>
     </div>
