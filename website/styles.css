@@ -646,3 +646,15 @@ h2:not(.statement):not(.visually-hidden),.steak-copy h2,.split-body h2{font-size
 /* Smaller hero logo (2026-11-19) */
 .hero-logo{width:clamp(84px,7.5vw,110px);margin-bottom:22px}
 @media (max-width:900px){.hero-logo{width:86px;margin-bottom:18px}}
+/* Smaller, one-line display text everywhere (2026-11-19) */
+.panel h3{font-size:clamp(1.5rem,2.6vw,2.2rem);line-height:1.2;white-space:nowrap}
+.banner-title{font-size:clamp(1.6rem,4vw,3.2rem)}
+.closing-kh{font-size:clamp(1.6rem,3vw,2.2rem)}
+.name-kh{font-size:clamp(1.6rem,3vw,2.2rem)}
+.page-hero h1{font-size:clamp(1.4rem,3vw,2.2rem);white-space:nowrap}
+h3{line-height:1.25}
+.banner-title{font-size:clamp(1.4rem,3vw,2.4rem)}
+.statement{font-size:clamp(1.05rem,1.4vw,1.3rem)}
+.closing-line{font-size:clamp(1rem,1.4vw,1.2rem);line-height:1.6}
+@media (min-width:901px){.closing-line br{display:none}}
+.hero-lede{font-size:clamp(1rem,1.4vw,1.25rem)!important;line-height:1.6}
