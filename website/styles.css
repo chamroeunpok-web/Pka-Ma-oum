@@ -613,14 +613,14 @@ h2{letter-spacing:.015em}
 
 /* ===== Brand identity & refined hero title (2026-11-19) ===== */
 .brand{flex-direction:row;gap:14px}
-.brand-mark{display:block;width:48px;height:48px;flex:none}
+.brand-mark{display:block;width:54px;height:54px;flex:none}
 .brand-text{display:flex;flex-direction:column;align-items:center;line-height:1}
 .foot-brand{flex-direction:column;align-items:flex-start;gap:12px}
 .foot-brand .brand-text{align-items:flex-start}
-.foot-brand .brand-mark{width:60px;height:60px}
+.foot-brand .brand-mark{width:96px;height:96px}
 .hero h1{font-family:var(--body);font-weight:300;font-size:clamp(1.05rem,2.3vw,1.9rem);letter-spacing:.42em;margin-right:-.42em;line-height:1.35}
 @media (max-width:900px){
   .brand{gap:10px}
-  .brand-mark{width:36px;height:36px}
+  .brand-mark{width:40px;height:40px}
   .hero h1{white-space:normal;font-size:clamp(1.05rem,5vw,1.35rem);letter-spacing:.3em;margin-right:-.3em;line-height:1.6}
 }
