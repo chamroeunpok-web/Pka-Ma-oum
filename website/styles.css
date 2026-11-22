@@ -681,3 +681,31 @@ address{font-size:1.15rem}
 @media (max-width:600px){.hero-en{font-size:.98rem}.hero-content .hero-tag{font-size:.58rem;letter-spacing:.12em}}
 /* Our Story bilingual statement (2026-11-19) */
 .statement-kh{font-family:var(--khmer-body);font-size:clamp(1rem,1.3vw,1.15rem);line-height:1.9;color:var(--gold-2);max-width:680px;margin:6px auto 14px}
+/* Full menu layer (2026-11-21): Heritage Menu categories, Khmer labels, riel prices, set menus */
+.group-kh{font-family:var(--khmer-body);font-size:.92rem;line-height:1.6;color:var(--gold-ink);margin:0 0 4px;display:flex;align-items:baseline;gap:12px}
+.group-kh span{font:500 .62rem/1 var(--body);letter-spacing:.3em;color:var(--muted)}
+.group-intro{margin:10px 0 4px;color:var(--muted);font-family:var(--display);font-style:italic;font-size:1.02rem;line-height:1.5}
+.group-intro span{display:block;font-family:var(--khmer-body);font-style:normal;font-size:.86rem;line-height:1.7}
+.menu-group .group-title+.menu-list,.menu-group .group-intro+.menu-list{margin-top:4px}
+.menu-group .menu-list+.group-kh{margin-top:48px}
+.price small{display:block;font:400 .66rem/1.4 var(--khmer-body);color:var(--muted);text-align:right;margin-top:2px}
+.set-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1120px;margin:0 auto}
+.set-card{display:flex;flex-direction:column;text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:36px 26px 30px;position:relative}
+.set-card::before{content:"";position:absolute;inset:8px;border:1px solid var(--line);border-radius:calc(var(--radius) - 4px);pointer-events:none}
+.set-kh{font-family:var(--khmer-body);color:var(--gold-ink);font-size:.95rem;line-height:1.7;margin:0}
+.set-card h3{font-size:clamp(1.2rem,1.7vw,1.5rem);margin:2px 0 6px}
+.set-tag{color:var(--muted);font-family:var(--display);font-style:italic;font-size:.98rem;line-height:1.5;margin:0}
+.set-tag span{display:block;font-family:var(--khmer-body);font-style:normal;font-size:.82rem;line-height:1.7}
+.set-price{font-family:var(--display);font-size:2.2rem;line-height:1;margin:18px 0 6px;color:var(--ink)}
+.set-price::before{content:"$";font-size:.55em;vertical-align:.7em;margin-right:2px;color:var(--gold-ink)}
+.set-price small{display:block;font:500 .6rem/1.8 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.set-price small span{font-family:var(--khmer-body);letter-spacing:0;text-transform:none;font-size:.78rem}
+.set-course{border-top:1px solid var(--line);padding:16px 0 4px;margin-top:12px}
+.set-label{font:500 .6rem/1.6 var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 8px}
+.set-label span{display:block;font-family:var(--khmer-body);letter-spacing:0;text-transform:none;font-size:.78rem}
+.set-course ul{list-style:none;margin:0;padding:0}
+.set-course li{font-family:var(--display);font-size:1.08rem;line-height:1.3;padding:6px 0}
+.set-course li span{display:block;font-family:var(--khmer-body);font-size:.78rem;color:var(--muted);line-height:1.6}
+.set-card .btn{margin-top:auto;align-self:center}
+.set-card .set-course:last-of-type{margin-bottom:24px}
+@media (max-width:980px){.set-grid{grid-template-columns:1fr;max-width:520px}}
